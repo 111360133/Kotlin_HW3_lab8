@@ -67,7 +67,6 @@ class MainActivity : AppCompatActivity() {
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
             holder.bind(data[position]) { item ->
-                // 移除資料並通知更新
                 data.remove(item)
                 notifyDataSetChanged()
             }
